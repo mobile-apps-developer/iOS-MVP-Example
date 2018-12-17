@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C6s-TA-3Je">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register user-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Register user" id="BYZ-38-t0r" customClass="ViewController" customModule="MVPExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-9x-TIq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1rZ-eb-tMa">
+                                        <rect key="frame" x="189" y="430" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-4c-AGA">
+                                <rect key="frame" x="20" y="272.5" width="335" height="122"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiH-lK-XFw">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7eK-3O-e0m">
+                                        <rect key="frame" x="0.0" y="44" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-mE-y9j">
+                                        <rect key="frame" x="0.0" y="88" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-XB-a8b">
+                                <rect key="frame" x="20" y="542" width="335" height="45"/>
+                                <color key="backgroundColor" red="0.26987230779999999" green="0.79342174529999998" blue="0.57025651479999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0Fe-Mb-fDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Register user">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBS-dl-VII"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kz7-9x-TIq" secondAttribute="trailing" id="0Vl-AS-JjG"/>
+                            <constraint firstAttribute="bottom" secondItem="Kz7-9x-TIq" secondAttribute="bottom" id="7sv-nz-End"/>
+                            <constraint firstItem="ip2-XB-a8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HB6-Ih-n63"/>
+                            <constraint firstItem="Kz7-9x-TIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iha-Vq-byv"/>
+                            <constraint firstItem="cQS-4c-AGA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Knq-8c-dip"/>
+                            <constraint firstAttribute="bottom" secondItem="ip2-XB-a8b" secondAttribute="bottom" constant="80" id="Sna-D9-1uh"/>
+                            <constraint firstItem="ip2-XB-a8b" firstAttribute="leading" secondItem="cQS-4c-AGA" secondAttribute="leading" id="ThC-6f-uYt"/>
+                            <constraint firstItem="Kz7-9x-TIq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="caM-c1-y4w"/>
+                            <constraint firstItem="cQS-4c-AGA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o9M-Fb-M8v"/>
+                            <constraint firstItem="cQS-4c-AGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oht-UG-lPi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KH3-lh-qya"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="NVc-mE-y9j" id="D81-u3-Gce"/>
+                        <outlet property="emailTextField" destination="xiH-lK-XFw" id="Xic-gK-5qd"/>
+                        <outlet property="personNameTextField" destination="7eK-3O-e0m" id="B0E-jf-uhS"/>
+                        <outlet property="progressSpinnerView" destination="Kz7-9x-TIq" id="rFG-PY-JmH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.11594202898561" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hvz-0b-aNy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C6s-TA-3Je" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZGz-lx-U7a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3aX-gc-mQK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcN-Fc-21a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="129"/>
+        </scene>
+    </scenes>
+</document>
